@@ -1,4 +1,4 @@
-https://travis-ci.org/BrianCoveney/SeriousSprinters.svg?branch=master
+[![Build Status](https://travis-ci.org/BrianCoveney/SeriousSprinters.svg?)](https://travis-ci.org/BrianCoveney/SeriousSprinters)
 
 # SeriousSprinters
 
