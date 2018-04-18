@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Word {
 
-    private String id;
     private String word;
     private int frequency;
     private List<String> glidingLiquidsWords = Arrays.asList(
@@ -12,22 +11,9 @@ public class Word {
             "bu"
     );
 
-    public Word() {
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getWord() {
-        return word;
-    }
-
-    public void setWord(String word) {
+    public Word(String word) {
+        if (word == null)
+            throw new IllegalArgumentException(String.format("Parameter cannot be null"));
         this.word = word;
     }
 
@@ -51,10 +37,7 @@ public class Word {
 
     @Override
     public String toString() {
-        return "Word{" +
-                "word='" + word + '\'' +
-                ", frequency=" + frequency +
-                '}';
+        return word;
     }
 
 }

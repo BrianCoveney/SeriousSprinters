@@ -14,7 +14,7 @@ public class WordTest {
 
     @Before
     public void setUp() throws Exception {
-        word = new Word();
+        word = new Word("pider");
     }
 
     @Test
@@ -27,4 +27,25 @@ public class WordTest {
         assertEquals(2, word.getFrequency());
     }
 
+    @Test
+    public void testIncrementFrequency() {
+        assertTrue(word.hasMatch(wordInDictionary));
+        assertEquals(1, word.getFrequency());
+    }
+
+    @Test
+    public void testToString() {
+        assertEquals(wordInDictionary, word.toString());
+    }
+
+    @Test
+    public void testWordConstructorThatTakesAString() {
+        Word w = new Word("a word");
+        assertEquals("a word", w.toString());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testWordConstructorWithNullParam() {
+        new Word(null);
+    }
 }

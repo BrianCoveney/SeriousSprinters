@@ -1,10 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-
-       Word word = new Word();
-       word.setWord("Aeroplane");
-       System.out.println(word.getWord());
-
+        Word word = new Word("Aeroplane");
+        System.out.println(word.toString());
     }
 }
