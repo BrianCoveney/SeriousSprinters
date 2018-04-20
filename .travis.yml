@@ -6,9 +6,7 @@ jdk:
 notifications:
   email: false
 
-script: "mvn cobertura:cobertura"
-
-script: "mvn checkstyle:check"
+script: "mvn test cobertura:cobertura checkstyle:check"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
