@@ -1,12 +1,13 @@
 import java.util.Arrays;
 import java.util.List;
 
+
 public class Word {
 
     private String word;
     private int frequency;
     private List<String> glidingLiquidsWords = Arrays.asList(
-            "teffone",
+            "teffoneeeeeeeeeeeeeeeeeteffoneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
             "pider",
             "bu"
     );
