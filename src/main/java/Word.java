@@ -7,14 +7,15 @@ public class Word {
     private String word;
     private int frequency;
     private List<String> glidingLiquidsWords = Arrays.asList(
-            "teffoneeeeeeeeeeeeeeeeeteffoneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "teffone",
             "pider",
             "bu"
     );
 
-    public Word(String word) {
-        if (word == null)
+    public Word(final String word) {
+        if (word == null) {
             throw new IllegalArgumentException(String.format("Parameter cannot be null"));
+        }
         this.word = word;
     }
 
@@ -26,8 +27,8 @@ public class Word {
         frequency++;
     }
 
-    public boolean hasMatch(String word) {
-        for (String words : glidingLiquidsWords) {
+    public boolean hasMatch(final String word) {
+        for (final String words : glidingLiquidsWords) {
             if (words.contains(word)) {
                 incrementFrequency();
                 return true;
