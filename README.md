@@ -5,6 +5,6 @@
 
 Serious about Sprints since 2018
 
-[www.jenkins.briancoveneyjob/SeriousSprinters/.com](http://jenkins.briancoveney.com:8080/job/SeriousSprinters/:8080/)
+[www.jenkins.briancoveney.com:8080/job/SeriousSprinters/](http://jenkins.briancoveney.com:8080/job/SeriousSprinters/)
 
 [www.serioussprinters.visualstudio.com/AgileProject/_build](https://serioussprinters.visualstudio.com/AgileProject/_build)
